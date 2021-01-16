@@ -196,5 +196,4 @@
     select count(1) from red_tourism_user
     where phone = #{phone}
   </select>
-
 </mapper>

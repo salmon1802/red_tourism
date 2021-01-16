@@ -2,32 +2,33 @@ package com.redtourism.demo.pojo;
 
 import java.util.Date;
 
-public class ActivityInfo {
-    private Integer id;
+public class ActivityJoin {
 
-    private Integer aid;
+    private Integer id;
 
     private Integer userId;
 
-    private String content;
+    private Integer aid;
 
-    private Integer point;
+    private Integer quantity; //当前活动的剩余报名数量
+
+    private Integer checked;  //收藏夹选择功能
 
     private Date createTime;
 
     private Date updateTime;
 
-    public ActivityInfo(Integer id, Integer aid, Integer userId, String content, Integer pointTotal, Date createTime, Date updateTime) {
+    public ActivityJoin(Integer id, Integer userId, Integer aid, Integer quantity, Integer checked, Date createTime, Date updateTime) {
         this.id = id;
-        this.aid = aid;
         this.userId = userId;
-        this.content = content;
-        this.point = point;
+        this.aid = aid;
+        this.quantity = quantity;
+        this.checked = checked;
         this.createTime = createTime;
         this.updateTime = updateTime;
     }
 
-    public ActivityInfo() {
+    public ActivityJoin() {
         super();
     }
 
@@ -39,14 +40,6 @@ public class ActivityInfo {
         this.id = id;
     }
 
-    public Integer getAid() {
-        return aid;
-    }
-
-    public void setAid(Integer aid) {
-        this.aid = aid;
-    }
-
     public Integer getUserId() {
         return userId;
     }
@@ -55,20 +48,28 @@ public class ActivityInfo {
         this.userId = userId;
     }
 
-    public String getContent() {
-        return content;
+    public Integer getAid() {
+        return aid;
     }
 
-    public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
+    public void setAid(Integer aid) {
+        this.aid = aid;
     }
 
-    public Integer getpoint() {
-        return point;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setpoint(Integer point) {
-        this.point = point;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Integer getChecked() {
+        return checked;
+    }
+
+    public void setChecked(Integer checked) {
+        this.checked = checked;
     }
 
     public Date getCreateTime() {

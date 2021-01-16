@@ -3,25 +3,19 @@ package com.redtourism.demo.vo;
 import java.math.BigDecimal;
 
 /**
- * @date 2021-1-15 - 20:54
+ * @date 2021-1-16 - 13:45
  * Created by Salmon
  */
-public class ActivityDetailVo {
-
+public class ActivityListVo {
 
     private Integer aid;
-    private Integer userId;  //创建者id
     private String mainPicture;
     private Integer activityPeople; //活动最大参加人数
     private String activityTitle;
-    private String activityContent;
     private Integer activityStatus;
     private Integer activityType;
     private String activityAddress;
     private Integer joinPeople;  //活动当前参与人数
-    private String createTime;
-    private String updateTime;
-
     private String imageHost;
 
     public Integer getAid() {
@@ -30,14 +24,6 @@ public class ActivityDetailVo {
 
     public void setAid(Integer aid) {
         this.aid = aid;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
     }
 
     public String getMainPicture() {
@@ -64,14 +50,6 @@ public class ActivityDetailVo {
         this.activityTitle = activityTitle;
     }
 
-    public String getActivityContent() {
-        return activityContent;
-    }
-
-    public void setActivityContent(String activityContent) {
-        this.activityContent = activityContent;
-    }
-
     public Integer getActivityStatus() {
         return activityStatus;
     }
@@ -87,8 +65,6 @@ public class ActivityDetailVo {
     public void setActivityType(Integer activityType) {
         this.activityType = activityType;
     }
-
-
 
     public String getActivityAddress() {
         return activityAddress;
@@ -106,21 +82,7 @@ public class ActivityDetailVo {
         this.joinPeople = joinPeople;
     }
 
-    public String getCreateTime() {
-        return createTime;
-    }
 
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(String updateTime) {
-        this.updateTime = updateTime;
-    }
 
     public String getImageHost() {
         return imageHost;

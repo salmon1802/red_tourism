@@ -19,10 +19,6 @@ public class Activity {
 
     private Integer activityType;
 
-    private String activityCreatetime;
-
-    private String activityEndtime;
-
     private String activityAddress;
 
     private Integer joinpeople;
@@ -31,7 +27,7 @@ public class Activity {
 
     private Date updateTime;
 
-    public Activity(Integer aid, Integer userId, String mainPicture, Integer activityPeople, String activityTitle, String activityContent, Integer activityStatus, Integer activityType, String activityCreatetime, String activityEndtime, String activityAddress, Integer joinpeople, Date createTime, Date updateTime) {
+    public Activity(Integer aid, Integer userId, String mainPicture, Integer activityPeople, String activityTitle, String activityContent, Integer activityStatus, Integer activityType, String activityAddress, Integer joinpeople, Date createTime, Date updateTime) {
         this.aid = aid;
         this.userId = userId;
         this.mainPicture = mainPicture;
@@ -40,8 +36,6 @@ public class Activity {
         this.activityContent = activityContent;
         this.activityStatus = activityStatus;
         this.activityType = activityType;
-        this.activityCreatetime = activityCreatetime;
-        this.activityEndtime = activityEndtime;
         this.activityAddress = activityAddress;
         this.joinpeople = joinpeople;
         this.createTime = createTime;
@@ -105,7 +99,7 @@ public class Activity {
     }
 
     public void setActivityStatus(Integer activityStatus) {
-        this.activityStatus = activityStatus == null ? null : activityStatus;
+        this.activityStatus = activityStatus;
     }
 
     public Integer getActivityType() {
@@ -113,23 +107,7 @@ public class Activity {
     }
 
     public void setActivityType(Integer activityType) {
-        this.activityType = activityType == null ? null : activityType;
-    }
-
-    public String getActivityCreatetime() {
-        return activityCreatetime;
-    }
-
-    public void setActivityCreatetime(String activityCreatetime) {
-        this.activityCreatetime = activityCreatetime == null ? null : activityCreatetime.trim();
-    }
-
-    public String getActivityEndtime() {
-        return activityEndtime;
-    }
-
-    public void setActivityEndtime(String activityEndtime) {
-        this.activityEndtime = activityEndtime == null ? null : activityEndtime.trim();
+        this.activityType = activityType;
     }
 
     public String getActivityAddress() {

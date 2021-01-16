@@ -1,5 +1,6 @@
 package com.redtourism.demo.service;
 
+import com.github.pagehelper.PageInfo;
 import com.redtourism.demo.common.ServerResponse;
 import com.redtourism.demo.pojo.Activity;
 import com.redtourism.demo.vo.ActivityDetailVo;
@@ -15,5 +16,9 @@ public interface IActivityService {
      ServerResponse<String> setActivityStatus(Integer activityId,Integer status);
 
      ServerResponse<ActivityDetailVo> getActivityDetail(Integer activityId);
+
+     ServerResponse getActivityList(int pageNum,int pageSize);
+
+     ServerResponse<PageInfo> getActivityByKeywordType(String keyword, Integer type, int pageNum, int pageSize, String orderBy);
 
 }

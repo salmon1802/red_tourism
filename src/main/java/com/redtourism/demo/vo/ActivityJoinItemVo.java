@@ -3,12 +3,12 @@ package com.redtourism.demo.vo;
 import java.math.BigDecimal;
 
 /**
- * @date 2021-1-15 - 20:54
+ * @date 2021-1-16 - 17:14
  * Created by Salmon
  */
-public class ActivityDetailVo {
+public class ActivityJoinItemVo {
 
-
+    private Integer id; //参加人员表id
     private Integer aid;
     private Integer userId;  //创建者id
     private String mainPicture;
@@ -19,10 +19,29 @@ public class ActivityDetailVo {
     private Integer activityType;
     private String activityAddress;
     private Integer joinPeople;  //活动当前参与人数
-    private String createTime;
-    private String updateTime;
+    private Integer quantity; //当前活动的剩余报名数量
 
-    private String imageHost;
+
+
+    private Integer activityChecked;//此商品是否勾选
+
+    private String limitQuantity;//限制数量的一个返回结果
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getAid() {
         return aid;
@@ -88,8 +107,6 @@ public class ActivityDetailVo {
         this.activityType = activityType;
     }
 
-
-
     public String getActivityAddress() {
         return activityAddress;
     }
@@ -106,27 +123,19 @@ public class ActivityDetailVo {
         this.joinPeople = joinPeople;
     }
 
-    public String getCreateTime() {
-        return createTime;
+    public Integer getActivityChecked() {
+        return activityChecked;
     }
 
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime;
+    public void setActivityChecked(Integer activityChecked) {
+        this.activityChecked = activityChecked;
     }
 
-    public String getUpdateTime() {
-        return updateTime;
+    public String getLimitQuantity() {
+        return limitQuantity;
     }
 
-    public void setUpdateTime(String updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public String getImageHost() {
-        return imageHost;
-    }
-
-    public void setImageHost(String imageHost) {
-        this.imageHost = imageHost;
+    public void setLimitQuantity(String limitQuantity) {
+        this.limitQuantity = limitQuantity;
     }
 }

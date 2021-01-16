@@ -1,6 +1,9 @@
 package com.redtourism.demo.dao;
 
 import com.redtourism.demo.pojo.Activity;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface ActivityMapper {
     int deleteByPrimaryKey(Integer aid);
@@ -14,4 +17,16 @@ public interface ActivityMapper {
     int updateByPrimaryKeySelective(Activity record);
 
     int updateByPrimaryKey(Activity record);
+
+    List<Activity> selectList();
+
+    Activity selectByType(Integer type);
+
+    List<Activity> selectByNameAndType(@Param("activityTitle")String activityTitle, @Param("type")Integer type);
+
+    int addJoinpeopleByPrimaryKey(Integer aid);
+
+    int reduceJoinpeopleByPrimaryKey(Integer aid);
+
+
 }

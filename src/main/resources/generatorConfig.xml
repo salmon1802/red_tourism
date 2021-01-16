@@ -74,6 +74,7 @@
             <columnOverride column="activity_content" jdbcType="VARCHAR" />
         </table>
         <table tableName="red_tourism_activity_info" domainObjectName="ActivityInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="red_tourism_activity_join" domainObjectName="ActivityJoin" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
         <table tableName="red_tourism_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
 
 
