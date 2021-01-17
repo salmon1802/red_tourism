@@ -3,11 +3,7 @@ package com.redtourism.demo.service.impl;
 import com.redtourism.demo.common.ResponseCode;
 import com.redtourism.demo.common.ServerResponse;
 import com.redtourism.demo.dao.ActivityInfoMapper;
-import com.redtourism.demo.dao.ActivityJoinMapper;
-import com.redtourism.demo.dao.ActivityMapper;
-import com.redtourism.demo.pojo.Activity;
 import com.redtourism.demo.pojo.ActivityInfo;
-import com.redtourism.demo.pojo.ActivityJoin;
 import com.redtourism.demo.service.IActivityInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,16 +39,30 @@ public class ActivityInfoServiceImpl implements IActivityInfoService {
             activityInfo.setpoint(1);
             activityInfoMapper.insert(activityInfo);
         }else{
+            //如果点赞了那就取消
             if(activityJoin.getpoint() == 1) {
                 activityInfoMapper.cancelPointByUserIdActivityId(userId, activityId);
                 return ServerResponse.createBySuccessMessage("您已经取消点赞");
             }else {
-                //只评论没点赞
+                //只评论没点赞，那就点赞
                 activityInfoMapper.pointByUserIdActivityId(userId, activityId);
             }
         }
         return ServerResponse.createBySuccessMessage("您已经点赞");
+    }
 
+    /**
+     * 获取点赞数量
+     * @param activityId
+     * @return
+     */
+    public ServerResponse pointCount(Integer activityId){
+        if (activityId == null){
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.ILLEGAL_ARGUMENT.getCode(), ResponseCode.ILLEGAL_ARGUMENT.getDesc());
+        }
+        int pointCount = activityInfoMapper.selectPointCountByActivityId(activityId);
+
+        return ServerResponse.createBySuccess(pointCount);
     }
 
 

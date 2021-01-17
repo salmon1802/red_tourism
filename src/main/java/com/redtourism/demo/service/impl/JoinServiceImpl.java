@@ -25,7 +25,7 @@ import java.util.List;
  * Created by Salmon
  */
 @Service("iJoinService")
-public class IJoinServiceImpl implements IJoinService {
+public class JoinServiceImpl implements IJoinService {
 
     @Autowired
     private ActivityJoinMapper activityJoinMapper;

@@ -42,7 +42,8 @@ public class ActivityController {
     private IUserService iUserService;
 
     /**
-     * 创建或更新活动（其中status设为1或0）
+     * 创建或更新活动
+     * 活动状态(1代表进行，0代表结束)
      * @param session
      * @param activity
      * @return
@@ -103,14 +104,13 @@ public class ActivityController {
 
     /**
      * 全部的活动分页列表
-     * @param session
      * @param pageNum
      * @param pageSize
      * @return
      */
     @RequestMapping("list.do")
     @ResponseBody
-    public ServerResponse getList(HttpSession session, @RequestParam(value = "pageNum",defaultValue = "1") int pageNum, @RequestParam(value = "pageSize",defaultValue = "10") int pageSize){
+    public ServerResponse getList(@RequestParam(value = "pageNum",defaultValue = "1") int pageNum, @RequestParam(value = "pageSize",defaultValue = "10") int pageSize){
 
             return iActivityService.getActivityList(pageNum, pageSize);
     }

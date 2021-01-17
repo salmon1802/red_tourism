@@ -30,7 +30,7 @@ public class JoinController {
 
 
     /**
-     * 用户直接加入活动
+     * 用户在首页直接加入活动
      * @param session
      * @param activityId
      * @return
@@ -46,7 +46,7 @@ public class JoinController {
     }
 
     /**
-     * 用户直接退出活动
+     * 用户在首页直接退出活动
      * @param session
      * @param activityId
      * @return
@@ -90,7 +90,7 @@ public class JoinController {
      * @param session
      * @param activityId
      * @return
-
+     */
      @RequestMapping("add.do")
      @ResponseBody
      public ServerResponse<ActivityJoinVo> add(HttpSession session, Integer activityId){
@@ -100,6 +100,6 @@ public class JoinController {
      }
      return iJoinService.add(user.getId(), activityId);
      }
-     */
+
 
 }

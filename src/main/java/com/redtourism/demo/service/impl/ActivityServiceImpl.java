@@ -129,9 +129,7 @@ public class ActivityServiceImpl implements IActivityService {
      * @return
      */
     public ServerResponse getActivityList(int pageNum,int pageSize){
-        //startPage--start
-        //填充自己的sql查询逻辑
-        //pageHelper-收尾
+
         PageHelper.startPage(pageNum,pageSize);
         List<Activity> activityList = activityMapper.selectList();
 

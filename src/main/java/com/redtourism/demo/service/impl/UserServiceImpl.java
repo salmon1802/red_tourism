@@ -78,7 +78,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     /**
-     * 检查用户名与Email是否已存在
+     * 检查用户名与手机号是否已存在
      * @param str
      * @param type
      * @return

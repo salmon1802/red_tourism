@@ -24,7 +24,7 @@ public class InteractionController {
     @Autowired
     private IActivityInfoService iActivityInfoService;
 
-    //点赞数查询
+
     //评论分页显示功能
     //评论功能(只能评论不能回复)
 
@@ -44,7 +44,22 @@ public class InteractionController {
         return iActivityInfoService.Point(user.getId(), activityId);
     }
 
+    /**
+     * 获取点赞数量
+     * @param activityId
+     * @return
+     */
+    @RequestMapping("point_count.do")
+    @ResponseBody
+    public ServerResponse<ActivityJoinVo> pointCount(Integer activityId){
 
+        return iActivityInfoService.pointCount(activityId);
+    }
+
+
+
+    //我刚刚看了下好像前端没设计评论区，而且我这个数据库设计的只能实现评论功能，没办法实现递归展示的子评论以及回复功能
+    //所以溜了溜了
 
 
 

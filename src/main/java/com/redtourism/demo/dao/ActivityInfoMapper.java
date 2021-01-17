@@ -28,4 +28,5 @@ public interface ActivityInfoMapper {
 
     int cancelPointByUserIdActivityId(@Param("userId")Integer userId, @Param("activityId") Integer activityId);
 
+    int selectPointCountByActivityId(Integer activityId);
 }

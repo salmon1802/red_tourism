@@ -67,7 +67,7 @@ public class UserController {
     }
 
     /**
-     * 检查用户id与Email是否存在
+     * 检查用户id与手机号是否存在
      * @param str
      * @param type
      * @return

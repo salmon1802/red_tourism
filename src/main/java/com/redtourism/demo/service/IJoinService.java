@@ -10,7 +10,7 @@ import com.redtourism.demo.vo.ActivityJoinVo;
  */
 public interface IJoinService {
 
- //   public ServerResponse<ActivityJoinVo> add(Integer userId, Integer activityId);
+    ServerResponse<ActivityJoinVo> add(Integer userId, Integer activityId);
 
     ServerResponse addActivity(Integer userId,Integer activityId);
 

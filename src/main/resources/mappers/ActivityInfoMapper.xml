@@ -144,6 +144,14 @@
     set
       point = 0
     where user_id = #{userId}
-      and aid = #{activityId}
+    and aid = #{activityId}
   </update>
+
+  <select id="selectPointCountByActivityId" resultType="int" parameterType="int" >
+    select
+    count(1)
+    from red_tourism_activity_info
+    where aid = #{activityId}
+    and point = 1
+  </select>
 </mapper>

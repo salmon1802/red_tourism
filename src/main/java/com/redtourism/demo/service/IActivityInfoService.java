@@ -10,4 +10,6 @@ public interface IActivityInfoService {
 
     ServerResponse Point(Integer userId, Integer activityId);
 
+    ServerResponse pointCount(Integer activityId);
+
 }
