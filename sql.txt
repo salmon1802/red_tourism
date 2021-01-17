@@ -38,7 +38,7 @@ CREATE TABLE `red_tourism_activity_info`  (
   `aid` INT(11) UNSIGNED NULL DEFAULT NULL COMMENT '活动id',
   `user_id` INT(11) UNSIGNED NULL DEFAULT NULL COMMENT '用户id',
   `content` VARCHAR(2048)  DEFAULT '' COMMENT '评论内容',
-  `point_total` INT(11) UNSIGNED NULL DEFAULT 0 COMMENT '点赞总数',
+  `point` INT(11) UNSIGNED NULL DEFAULT 0 COMMENT '是否点赞：0没点，1点了',
   `create_time` DATETIME DEFAULT NULL,
   `update_time` DATETIME DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
@@ -49,7 +49,7 @@ CREATE TABLE `red_tourism_activity_join` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `user_id` INT(11) NOT NULL,
   `aid` INT(11) DEFAULT NULL COMMENT '活动id',
-  `quantity` INT(11) DEFAULT NULL COMMENT '参加的活动数量',
+  `quantity` INT(11) DEFAULT NULL COMMENT '当前活动的剩余报名数量',
   `checked` INT(11) DEFAULT NULL COMMENT '是否选择,1=已勾选,0=未勾选',
   `create_time` DATETIME DEFAULT NULL COMMENT '创建时间',
   `update_time` DATETIME DEFAULT NULL COMMENT '更新时间',
