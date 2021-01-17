@@ -94,7 +94,7 @@ public class ActivityServiceImpl implements IActivityService {
         if(activity.getActivityStatus() != Const.ActivityStatusEnum.ON_PROCEED.getCode()){
             return ServerResponse.createByErrorMessage("活动已取消或者删除");
         }
-        ActivityDetailVo productDetailVo = assembleProductDetailVo(activity);
+        ActivityDetailVo productDetailVo = assembleActivityDetailVo(activity);
         return ServerResponse.createBySuccess(productDetailVo);
     }
 
@@ -103,7 +103,7 @@ public class ActivityServiceImpl implements IActivityService {
      * @param activity
      * @return
      */
-    private ActivityDetailVo assembleProductDetailVo(Activity activity){
+    private ActivityDetailVo assembleActivityDetailVo(Activity activity){
         ActivityDetailVo activityDetailVo = new ActivityDetailVo();
         activityDetailVo.setAid(activity.getAid());
         activityDetailVo.setUserId(activity.getUserId());
