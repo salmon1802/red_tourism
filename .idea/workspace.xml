@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c778c05-767a-48d2-9c1c-e55b39e492cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/ActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/InteractionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/InteractionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/JoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/JoinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/dao/ActivityInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/dao/ActivityInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/IActivityInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/IActivityInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/IFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/IFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/IJoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/IJoinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/ActivityInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/ActivityInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/ActivityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/IJoinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/JoinServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ActivityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ActivityInfoMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3c778c05-767a-48d2-9c1c-e55b39e492cf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +114,7 @@
       <workItem from="1610784043822" duration="22926000" />
       <workItem from="1610859734777" duration="392000" />
       <workItem from="1610860187293" duration="39000" />
-      <workItem from="1610860253332" duration="318000" />
+      <workItem from="1610860253332" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1610721316528</created>
@@ -145,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610808222423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第三次提交">
+      <created>1610860713639</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610860713639</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +147,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="第一次提交" />
     <MESSAGE value="第二次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次提交" />
+    <MESSAGE value="第三次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三次提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="580" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1610798721232">
@@ -166,54 +159,54 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="516" y="170" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.840@0.0.1549.840" timestamp="1610774842398" />
-    <state x="305" y="14" key="CommitChangelistDialog2" timestamp="1610808220993">
+    <state x="305" y="14" key="CommitChangelistDialog2" timestamp="1610860712684">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="305" y="14" key="CommitChangelistDialog2/0.0.1549.840@0.0.1549.840" timestamp="1610808220993" />
+    <state x="305" y="14" key="CommitChangelistDialog2/0.0.1549.840@0.0.1549.840" timestamp="1610860712684" />
     <state x="148" y="72" key="DiffContextDialog" timestamp="1610721284528">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="148" y="72" key="DiffContextDialog/0.0.1549.840@0.0.1549.840" timestamp="1610721284528" />
-    <state width="1506" height="388" key="GridCell.Tab.0.bottom" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.0.bottom" timestamp="1610860746474">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
-    <state width="1506" height="388" key="GridCell.Tab.0.center" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1610860746474" />
+    <state width="1506" height="388" key="GridCell.Tab.0.center" timestamp="1610860746474">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
-    <state width="1506" height="388" key="GridCell.Tab.0.left" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1610860746474" />
+    <state width="1506" height="388" key="GridCell.Tab.0.left" timestamp="1610860746474">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
-    <state width="1506" height="388" key="GridCell.Tab.0.right" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1610860746474" />
+    <state width="1506" height="388" key="GridCell.Tab.0.right" timestamp="1610860746474">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
-    <state width="1506" height="388" key="GridCell.Tab.1.bottom" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1610860746474" />
+    <state width="1506" height="388" key="GridCell.Tab.1.bottom" timestamp="1610860746475">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
-    <state width="1506" height="388" key="GridCell.Tab.1.center" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1610860746475" />
+    <state width="1506" height="388" key="GridCell.Tab.1.center" timestamp="1610860746475">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.1.center/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
-    <state width="1506" height="388" key="GridCell.Tab.1.left" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.1.center/0.0.1549.840@0.0.1549.840" timestamp="1610860746475" />
+    <state width="1506" height="388" key="GridCell.Tab.1.left" timestamp="1610860746475">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.1.left/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
-    <state width="1506" height="388" key="GridCell.Tab.1.right" timestamp="1610860626832">
+    <state width="1506" height="388" key="GridCell.Tab.1.left/0.0.1549.840@0.0.1549.840" timestamp="1610860746475" />
+    <state width="1506" height="388" key="GridCell.Tab.1.right" timestamp="1610860746475">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="388" key="GridCell.Tab.1.right/0.0.1549.840@0.0.1549.840" timestamp="1610860626832" />
+    <state width="1506" height="388" key="GridCell.Tab.1.right/0.0.1549.840@0.0.1549.840" timestamp="1610860746475" />
     <state x="316" y="78" key="Maven.ArtifactSearchDialog" timestamp="1610697743783">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="316" y="78" key="Maven.ArtifactSearchDialog/0.0.1549.840@0.0.1549.840" timestamp="1610697743783" />
-    <state x="367" y="154" key="Vcs.Push.Dialog.v2" timestamp="1610808231710">
+    <state x="367" y="154" key="Vcs.Push.Dialog.v2" timestamp="1610860720859">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="367" y="154" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1610808231710" />
+    <state x="367" y="154" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1610860720859" />
     <state x="505" y="200" key="extract.method.dialog" timestamp="1610785037612">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
