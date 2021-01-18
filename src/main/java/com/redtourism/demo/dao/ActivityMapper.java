@@ -1,10 +1,12 @@
 package com.redtourism.demo.dao;
 
 import com.redtourism.demo.pojo.Activity;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
+@Mapper
 public interface ActivityMapper {
     int deleteByPrimaryKey(Integer aid);
 

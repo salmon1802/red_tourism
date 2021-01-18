@@ -1,8 +1,10 @@
 package com.redtourism.demo.dao;
 
 import com.redtourism.demo.pojo.User;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 
